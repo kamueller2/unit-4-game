@@ -1,0 +1,28 @@
+body {
+    background-image: url("../images/bones.png");
+    opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#gameSection {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+p {
+    line-height: 1rem;
+}
+
+.container-fluid,
+.container {
+    max-width: 2000px;
+}
+
+.card-body {
+    padding: 0;
+}
