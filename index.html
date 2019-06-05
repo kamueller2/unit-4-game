@@ -14,6 +14,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!--background image-->
+    <link rel="stylesheet" href="assets/images/bones.png">
 
 </head>
 
@@ -32,43 +36,58 @@
         </div>
 
         <!--game-->
+        <div class="container">
 
-        <div class="row" id="gameSection">
 
-            <!--random number-->
-            <div class="col-md-3" id="numberSection">
-                <h3 class="text-center" id="random">Match Number:</h3>
+            <div class="row" id="gameSection">
+
+                <!--random number-->
+                <div class="col-md-3" id="numberSection">
+                    <!-- <h3 class="text-center" id="random">Match Number:</h3>
                 <h1 class="numberBox text-center" id="randomNumber">120</h1>
+             -->
+                    <div class="card bg-white mb-3 border border-info text-center" style="max-width: 18rem;">
+                        <div class="card-header border-info font-weight-bold">MATCH BONES: </div>
+                        <div class="card-body">
+                            <h1 class="card-text">120</h1>
+                        </div>
+                    </div>
+                    <!-- score -->
+                    <div class="card bg-white mb-3 border border-info text-center" style="max-width: 18rem;">
+                        <div class="card-header border-info font-weight-bold">YOUR SCORE: </div>
+                        <div class="card-body">
+                            <h1 class="card-text">0</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!--buttons-->
+                <div class="col-md-7" id="buttonSection">
+
+                    <button id="button-1" value="0"><img src="assets/images/pom.png" class="img-responsive icons" id="pom"></button>
+                    <button id="button-2" value="0"><img src="assets/images/chi.png" class="img-responsive icons" id="chi"></button>
+                    <button id="button-3" value="0"><img src="assets/images/pup.png" class="img-responsive icons" id="pup"></button>
+                    <button id="button-4" value="0"><img src="assets/images/pug.png" class="img-responsive icons" id="pug"></button>
+
+                </div>
+
+
             </div>
 
-            <!--buttons-->
-            <div class="col-md-6 text-center" id="buttonSection">
+        </div>
 
-                <button id="button-1" value="0"><img src="assets/images/pom.png" class="img-responsive icons" id="pom"></button>
 
-                <button id="button-2" value="0"><img src="assets/images/chi.png" class="img-responsive icons" id="chi"></button>
 
-                <button id="button-3" value="0"><img src="assets/images/pup.png" class="img-responsive icons" id="pup"></button>
 
-                <button id="button-4" value="0"><img src="assets/images/pug.png" class="img-responsive icons" id="pug"></button>
+        <!--wins & losses-->
+        <!-- 
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Wins: </li>
+                <li class="list-group-item">Losses: </li>
+        </div> -->
 
-            </div>
-
-            <!--points-->
-            <div class="col-md-3" id="points">
-                <h3 class="text-center" id="score">Your Total Score:</h3>
-                <h1 class="numberBox text-center" id="totalNumber">0</h1>
-            </div>
-
-            <!--wins & losses-->
-
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Wins: </li>
-                    <li class="list-group-item">Losses: </li>
-            </div>
-
-            <!--<div class="row">
+        <!--<div class="row">
 
                 <div class="col-lg-6">
                     <div class="panel panel-primary">
@@ -92,7 +111,7 @@
 
 
             </div> -->
-            <!-- <div class="row" id="game-stats">
+        <!-- <div class="row" id="game-stats">
                 <div class="col-md-6">
                     <h3 id="text-center wins">Wins: </h3>
                 </div>
@@ -103,18 +122,18 @@
             </div> -->
 
 
-        </div>
+    </div>
 
 
 
 
 
 
-        <!--link to jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <!--link to jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
 
-        <!--link to js file-->
-        <script src="assets/javascript/game.js"></script>
+    <!--link to js file-->
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
