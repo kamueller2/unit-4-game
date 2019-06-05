@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Crystal Collector</title>
+    <title>Bone Collector</title>
 
     <!--CSS links-->
 
@@ -21,14 +21,14 @@
 
     <div class="container-fluid">
         <div class="jumbotron bg-white">
-            <h1 class="display-4 text-center">Crystal Collector</h1>
+            <h1 class="display-4 text-center">Bone Collector</h1>
             <hr class="my-4">
             <h2 class="lead text-center">How to Play</h2>
             <p class="text-center">You will be given a random number at the start of the game.</p>
-            <p class="text-center">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p class="text-center">There are four dogs below. By clicking on a dog you will add a specific amount of bones to your total score.</p>
             <p class="text-center">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
-            <p class="text-center">The value of each crystal is hidden from you until you click on it.</p>
-            <p class="text-center">Each time the game starts, the values of the crystals will change.</p>
+            <p class="text-center">The value of each dog is hidden from you until you click on it.</p>
+            <p class="text-center">Each time the game starts, the values of the dogs will change.</p>
         </div>
 
         <!--game-->
@@ -44,13 +44,13 @@
             <!--buttons-->
             <div class="col-md-6 text-center" id="buttonSection">
 
-                <button id="button-1" value="0"><img src="assets/images/diamond1.png" class="img-responsive icons" id="diamond"></button>
+                <button id="button-1" value="0"><img src="assets/images/pom.png" class="img-responsive icons" id="pom"></button>
 
-                <button id="button-2" value="0"><img src="assets/images/pink1.png" class="img-responsive icons" id="pink"></button>
+                <button id="button-2" value="0"><img src="assets/images/chi.png" class="img-responsive icons" id="chi"></button>
 
-                <button id="button-3" value="0"><img src="assets/images/purple1.png" class="img-responsive icons" id="purple"></button>
+                <button id="button-3" value="0"><img src="assets/images/pup.png" class="img-responsive icons" id="pup"></button>
 
-                <button id="button-4" value="0"><img src="assets/images/blue1.png" class="img-responsive icons" id="blue"></button>
+                <button id="button-4" value="0"><img src="assets/images/pug.png" class="img-responsive icons" id="pug"></button>
 
             </div>
 
@@ -61,7 +61,38 @@
             </div>
 
             <!--wins & losses-->
-            <div class="row" id="game-stats">
+
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Wins: </li>
+                    <li class="list-group-item">Losses: </li>
+            </div>
+
+            <!--<div class="row">
+
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Wins: </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center">0</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Losses: </h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center">0</h3>
+                    </div>
+                </div>
+
+
+            </div> -->
+            <!-- <div class="row" id="game-stats">
                 <div class="col-md-6">
                     <h3 id="text-center wins">Wins: </h3>
                 </div>
@@ -69,7 +100,7 @@
                 <div class="col-md-6">
                     <h3 id="text-center losses">Losses: </h3>
                 </div>
-            </div>
+            </div> -->
 
 
         </div>
