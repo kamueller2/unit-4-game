@@ -2,21 +2,21 @@ $(document).ready(() => {
 
     //variables//
 
-    let crystal = {
-        diamond: {
-            name: 'Diamond',
+    let dog = {
+        pom: {
+            name: 'Pom',
             value: 0
         },
-        pink: {
-            name: 'Pink',
+        chi: {
+            name: 'Chi',
             value: 0
         },
-        purple: {
-            name: 'Purple',
+        pup: {
+            name: 'Pup',
             value = 0
         },
-        blue: {
-            name: 'Blue',
+        pug: {
+            name: 'Pug',
             value = 0
         }
     }
@@ -28,6 +28,14 @@ $(document).ready(() => {
     //wins & losses//
     let winCount = 0;
     let lossCoount = 0;
+
+
+    //jQuery//
+
+    $('#pom').click(function() {
+        alert("test");
+    })
+
 });
 
 // let randomNum = [];
