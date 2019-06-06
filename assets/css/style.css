@@ -31,3 +31,12 @@ p {
 h5 {
     padding-top: 10px;
 }
+
+h2.lead.text-center {
+    font-size: 2rem;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
