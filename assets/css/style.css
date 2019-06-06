@@ -44,7 +44,8 @@ h2.lead.text-center {
     justify-content: center;
 }
 
-#score {
+div .gameSection #score {
     justify-content: center;
     background-image: url("../images/bones.png");
+    opacity: 1;
 }
