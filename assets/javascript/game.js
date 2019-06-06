@@ -29,6 +29,35 @@ let targetScore = 0;
 let winCount = 0;
 let lossCoount = 0;
 
+//functions
+let startGame = function() {
+
+    let randomBones = function(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    //reset
+    let currentScore = 0;
+
+    //new targetScore(btwn 19-120)
+    targetScore = randomBones(19, 120);
+
+    //new dog bone values(btwn 1-12)
+
+    dog.pom.value = randomBones(1, 12);
+    dog.chi.value = randomBones(1, 12);
+    dog.pup.value = randomBones(1, 12);
+    dog.pug.value = randomBones(1, 12);
+
+    //update html
+
+    //testing
+    // console.log("......................");
+    // console.log(`Match Bones: ${targetScore}`);
+    // console.log(`Pom: ${dog.pom.value}`);
+    // console.log(".......................");
+}
+
 
 //jQuery
 
@@ -52,6 +81,8 @@ $('#pug').click(function() {
     // alert("test");
 })
 
+//starts game
+startGame();
 
 
 
