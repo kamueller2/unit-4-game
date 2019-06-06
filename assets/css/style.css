@@ -39,3 +39,12 @@ h2.lead.text-center {
 .jumbotron {
     padding: 30px 0;
 }
+
+#gameSection.row {
+    justify-content: center;
+}
+
+#score {
+    justify-content: center;
+    background-image: url("../images/bones.png");
+}
