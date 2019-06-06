@@ -30,12 +30,12 @@ let winCount = 0;
 let lossCoount = 0;
 
 //functions
+
+
+let randomBones = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 let startGame = function() {
-
-    let randomBones = function(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-
     //reset
     let currentScore = 0;
 
@@ -50,12 +50,26 @@ let startGame = function() {
     dog.pug.value = randomBones(1, 12);
 
     //update html
+    $('#yourScore').html(currentScore);
+    $('#targetScore').html(targetScore);
 
     //testing
-    // console.log("......................");
-    // console.log(`Match Bones: ${targetScore}`);
-    // console.log(`Pom: ${dog.pom.value}`);
-    // console.log(".......................");
+    console.log("......................");
+    console.log(`Match Bones: ${targetScore}`);
+    console.log(`Pom: ${dog.pom.value} | Chi: ${dog.chi.value} | Pup: ${dog.pup.value} | Pug: ${dog.pug.value}`);
+    console.log(".......................");
+}
+
+//updates clicks on dogs
+let addValues = function(dog) {
+    currentScore = currentScore + dog.value;
+
+    //update html
+    $('#yourScore').html(currentScore);
+
+
+    //test
+    console.log("your score: " + currentScore);
 }
 
 
@@ -64,21 +78,25 @@ let startGame = function() {
 $('#pom').click(function() {
     // test
     //alert("test");
+    addValues(dog.pom);
 })
 
 $('#chi').click(function() {
     // test
     // alert("test");
+    addValues(dog.chi);
 })
 
 $('#pup').click(function() {
     // test
     // alert("test");
+    addValues(dog.pup);
 })
 
 $('#pug').click(function() {
     // test
     // alert("test");
+    addValues(dog.pug);
 })
 
 //starts game
@@ -87,4 +105,4 @@ startGame();
 
 
 
-// });
+// })
